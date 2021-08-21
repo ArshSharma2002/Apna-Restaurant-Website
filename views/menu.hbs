@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="stylesheet" href="../static/restaurant-project-css/menu.css">
+    <link rel="stylesheet" href="../static/restaurant-project-css/trial.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+    
+</head>
+
+<body onload="preloader()">
+    {{>header}}
+    {{!-- <h1 class="main-heading">Our Menu</h1> --}}
+    <div id="menu-container">
+        <div class="menu-items">
+
+            <h2>Snacks & Starter</h2>
+            <a href="#snacks">
+                <img src="../static/web-images/Pizza.jpg" height="200" width="200" alt="Loading...">
+            </a>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium quae id est suscipit,
+                facere
+                at consequuntur doloremque accusantium quo et quos tempore non nesciunt eos veritatis error beatae
+                eaque.
+            </p>
+        </div>
+        <div class="menu-items">
+
+            <h2>Beverages</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium quae id est suscipit,
+                facere
+                at consequuntur doloremque accusantium quo et quos tempore non nesciunt eos veritatis error beatae
+                eaque.
+            </p>
+            <a href="#beverage">
+                <img src="../static/web-images/cocktails .jpg" height="200" width="200" alt="Loading...
+            " />
+            </a>
+        </div>
+        <div class="menu-items">
+
+            <h2>Main Course</h2>
+            <a href="#thali">
+                <img src="../static/web-images/indian thali.jpg" height="200" width="200" alt="Loading... " />
+            </a>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium quae id est suscipit,
+                facere
+                at consequuntur doloremque accusantium quo et quos tempore non nesciunt eos veritatis error beatae
+                eaque.
+            </p>
+        </div>
+        <div class="menu-items">
+
+            <h2>Desert</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium quae id est suscipit,
+                facere
+                at consequuntur doloremque accusantium quo et quos tempore non nesciunt eos veritatis error beatae
+                eaque.
+            </p>
+            <a href="#desert">
+                <img src="../static/web-images/ice ceram .png" height="200" width="200" alt="Loading...">
+            </a>
+        </div>
+    </div>
+    <!-- ********************************************************** -->
+    <div id="menu-list">
+
+        <div id="snacks">
+            <h2 class="menu-heading">Snacks & Starters</h2>
+            <ol>
+                <li>Noodles &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 80</li>
+                <li>French Fries &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 60</li>
+                <li>Pasta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 120</li>
+                <li>Samosa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 40</li>
+                <li>Chillie Potato &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 100</li>
+            </ol>
+        </div>
+        <div id="beverage">
+            <h2 class="menu-heading">Beverages</h2>
+            <ol>
+                <li>Tea &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 30</li>
+                <li>Coffee &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 40</li>
+                <li>Soft Drinks &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 50</li>
+                <li>Mocktails &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 60</li>
+                <li>Liquors &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 200</li>
+            </ol>
+        </div>
+        <div id="thali">
+            <h2 class="menu-heading">Main Course</h2>
+            <ol>
+                <li>Rice<ul>
+                        <li>Plain Rice &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 40</li>
+                        <li>Fried Rice &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 60</li>
+                        <li>Birayni &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 120</li>
+                    </ul>
+                </li>
+                <li>Chapati<ul>
+                        <li>Plain Chapati &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.10</li>
+                        <li>Rumali Roti &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.20</li>
+                        <li>Laccha Prantha &nbsp;&nbsp;&nbsp;&nbsp;Rs.30</li>
+                    </ul>
+                </li>
+                <li>Sabzi<ul>
+                        <li>Aloo Gobhi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 50</li>
+                        <li>Palak Paneer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 100</li>
+                        <li>Mix Veg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 80</li>
+                        <li>Shahi Paneer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 140</li>
+                    </ul>
+                </li>
+                <li>Main Dishes <ul>
+                        <li>Chana Masala &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 80</li>
+                        <li>Dal Makhani &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.80</li>
+                        <li>Shahi Rajmah &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 150</li>
+                        <li>Malai Kofta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 140</li>
+                    </ul>
+                </li>
+                <li>Salad<ul>
+                        <li>Seasonable Mix &nbsp;&nbsp;&nbsp;Rs. 50</li>
+                        <li>Green Salad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 50</li>
+                        <li>Only Onions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 50</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div id="desert">
+            <h2 class="menu-heading">Desert</h2>
+            <ol>
+                <li>Pastry&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 40</li>
+                <li>Gajar ka Halwa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 120</li>
+                <li>Ice cream&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 100</li>
+                <li>Gulab Jamun &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 80</li>
+                <li>Ras Malai &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 60</li>
+            </ol>
+        </div>
+
+    </div>
+    <center>
+        <button id="order-btn"><a href="/order">Order Now</a></button>
+    </center>
+    {{>footer}}
+    <script src="../static/restaurant-project-js/trial.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,422 @@
+html{
+    scroll-behavior:smooth;
+}
+
+/* ************************ css reset ************************* */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: auto; */
+}
+
+*::selection{
+    background-color: #5c6469;
+    color: white;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(219, 245, 253);
+    /* text-align: center; */
+}
+
+#loader{
+    position: fixed;
+    background-color: #313e48;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+
+#loading-ani{
+    height: 112px;
+    width: 109px;
+    border-right: 5px solid lightblue;
+    border-bottom-right-radius: 80%;
+    border-top-right-radius: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: preloader 2s linear infinite ;
+}
+
+@keyframes preloader{
+    0%{
+        transform: rotate(0deg);
+        /* transform: skew(0deg); */
+    }
+    100%{
+        transform: rotate(360deg);
+        /* transform: skew(360deg); */
+
+    }
+}
+
+
+/* ******************************   navbar  ************************ */
+
+nav{
+    background-color: #313e48;
+    padding: 15px;
+    font-size: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    
+}
+  
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+ul li a.nav-elements{
+    text-decoration: none;
+    color: white;
+    margin: 50px;
+}
+
+ul li a.nav-elements:hover{
+    
+    color: rgb(13, 184, 241);
+    transition:all 0.5s ease-in-out  ;
+}
+
+.nav-btn{
+    position: absolute;
+    top: 14px;
+    right: 30px;
+}
+
+#btn_search{
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+#search_icon{
+    height: 17px;
+    width: 24px
+}
+
+input{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+
+/* *****************************   slide shows in bg   *********************** */ 
+
+.slide-show{
+    /* margin: 2px 0px; */
+    max-width:500px
+}
+
+.mySlides {
+    display:none;
+    width: 100vw;
+    height: 643px;
+    opacity: 0.8;
+}
+
+.text {
+    color: white;
+    font-size: 32px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+}
+
+span{
+    font-weight: bolder;
+    font-size: 60px; 
+}
+
+.sub-heading{
+    margin:35px 2px;
+    animation-name: blink;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: repeat;
+    animation-fill-mode: forwards;
+}
+
+.menu-btn{
+    
+    background-color: #313e48;
+    position: relative;
+    top: 50px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin: 20px;
+    
+}
+
+.menu-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-btn:hover{
+    background: none;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
+
+/* *****************************  main body of the dom  *********************** */
+
+#main_container{
+    display: flex;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+.container_items{
+    background-color: lightblue;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.container_items:hover{
+    box-shadow: 4px 4px 6px #313e48;
+}
+
+#chat{
+    
+    height: 70px;
+    background-color: #313e48;
+    border: 1px solid white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 12px;
+    border-radius: 35px;
+}
+
+#agreement-container{
+    padding: 5px;
+}
+
+#agrement_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.agrement{
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.agrement:hover{
+    background-color: rgb(133, 183, 248);
+    box-shadow: 2px 2px 3px #313e48;
+}
+
+div#Our-story{
+    padding: 2px 3px;
+    margin: 2px 2px;
+    
+}
+
+/* div#Our-story::before{
+    content: "";
+    position: absolute;
+    background: url('../web-images/to\ be\ continued.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 550px;
+    z-index: -1;
+    opacity: 0.5;
+} */
+
+img.team{
+    border: 2px dotted black;
+    border-radius: 100px;
+    margin: 10px 25px;
+    height: 250px;
+    width: 200px;
+}
+
+#posts ul li{
+    margin: 10px 27px;
+    font-weight: bold;
+}
+
+h3#resp-post{
+    display: none;
+}
+
+#post-1{
+    padding-left: 150px;
+}
+
+
+#gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-items img:hover{
+    box-shadow: 2px 2px 3px black;
+
+}
+
+#gallery-items-1 img{
+
+    height: 350px;
+    width: 275px;
+    margin: 6px;
+    padding: 6px;
+
+}
+#gallery-items-2 img{
+
+    height: 350px;
+    width: 500px;
+    margin: 6px;
+    padding: 6px;
+
+}
+#gallery-items-3 img{
+
+    height: 350px;
+    width: 475px;
+    margin: 6px;
+    padding: 6px;
+
+}
+
+div#offers{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers-Slides {
+    display:none;
+    width: 855px;
+    height: 550px;
+    opacity: 0.8;
+}
+
+img.offers-Slides:hover{
+    box-shadow: 5px 5px 15px #313e48;
+}
+
+
+/* *****************************  footer *************************** */
+
+#foot{
+    height: 100%;
+    width: 100vw;
+    background-color: #313e48;
+    color: white;
+}
+
+#foot_heading{
+    padding: 5px;
+    margin: 4px;
+}
+
+.social_media{
+    height: 70px;
+    padding: 20px;
+    
+}
+
+.social_media:hover{
+    filter: invert(0.5);
+}
+
+div#themes{
+    margin: 17px;
+}
+
+.theme-btn{
+    padding: 4px 10px;
+    margin: 2px 5px;
+    border-radius: 40px;
+    border: 1px solid #313e48;
+    outline: none;
+    background-color: #313e48;
+}
+
+img.mode{
+    height: 30px;
+    width: 30px;
+    
+}
+
+#d-mode{
+    filter: invert(1);
+    /* margin-left: 40px; */
+}
+
+marquee{
+    padding: 3px;
+    margin-bottom:30px ;
+}
+
+
+#copyright{
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+
+
+
+/* ************************  ANIMATIONS ******************************* */
+@keyframes blink {
+    0%{ font-size:43px}
+    15%{ font-size:55px}
+    30%{ font-size:43px}
+    45%{ font-size:55px}
+    60%{ font-size:43px}
+    75%{ font-size:55px}
+    90%{ font-size:43px}
+    100%{ font-size:55px}
+}
+
+
+/* ************************** utility classes  *************************** */
+.main-heading {
+    text-align: center;
+    font-size: 82px;
+    font-family: 'Dancing Script', cursive;
+}
+.headings{    
+    text-align: center;
+    background-color: lightblue;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    
+}

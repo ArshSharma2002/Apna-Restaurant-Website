@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Order</title>
+
+    <link rel="stylesheet" href="../static/restaurant-project-css/book-order-form.css">
+    <link rel="stylesheet" href="../static/restaurant-project-css/trial.css">
+    <link rel="stylesheet" media="screen and (max-width: 1240px)" href="../static/restaurant-project-css/responsive.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+        form::before {
+            background-image: url("../static/web-images/menu-1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            content: "";
+            position: absolute;
+            height: 900px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.65;
+        }
+    </style>
+
+</head>
+
+<body onload="preloader()">
+    {{>header}}
+    {{!-- <center>
+        <h1>Book Your Order</h1>
+    </center> --}}
+    <form action="/order" method="POST">
+        <fieldset>
+
+            <legend>Fill the below details</legend>
+            <br>
+            <label for="name">Name:</label>
+            <div>
+                <input type="text" name="name" id="name" placeholder="enter your first name">
+            </div>
+            <br>
+            <label for="mail">Email Id:</label>
+            <div>
+                <input type="email" name="mail" id="mail" placeholder="enter your e-mail id">
+            </div>
+            <br>
+            <label for="contact">Contact No:</label>
+            <div>
+                <input type="number" name="contact" id="contact" placeholder="enter your contact">
+            </div>
+            <br>
+            <div>
+                <label for="payment">Payment Option :</label>
+                <select name="payment" id="payment">
+                    <option value="Cash on Delivery" selected>Cash on Delivery</option>
+                    <option value="Debit/ATM Card">Debit/ATM Card</option>
+                    <option value="PayTM / G Pay">PayTM / G Pay</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="order">Today's Special :</label>
+                <select name="order" id="order">
+                    <option value="Pizza" selected>Pizza</option>
+                    <option value="Burger">Burger</option>
+                    <option value="Dosa">Dosa</option>
+                    <option value="Manchurian">Manchurian</option>
+                    <option value="Special Thali">Special Thali</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                Address: <br><textarea name="address" id="address" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <!-- <div class="btn">
+                <button><a href="web-images/closed-covid19.png">submit</a></button> 
+            </div> -->
+            <center>
+                <div class="btn">
+                    <input type="submit" onclick="alert('Do you want to submit this ?')" value="Order now">
+                </div>
+            </center>
+
+        </fieldset>
+        {{>footer}}
+        <script src="../static/restaurant-project-js/trial.js"></script>
+    </form>
+</body>
+
+</html>

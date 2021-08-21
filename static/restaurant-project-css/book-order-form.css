@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*::selection{
+    background-color: #5c6469;
+    color: white;
+}
+
+form::before {
+    background-image: url("../web-images/book-order-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    height: 920px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.65;
+}
+
+fieldset {
+    border: 2px solid black;
+    margin: 5px 15px;
+    padding: 15px 15px;
+}
+
+legend {
+    font-size: 1.5rem;
+}
+
+.btn input {
+    padding: 7px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    outline: none;
+}
+.btn input:hover{
+    background-color: lightgray;
+}
+input,textarea{
+    border-radius: 4px;
+    border: 1px solid black ;
+    padding: 4px;
+    outline: none;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 52px;
+    padding: 8px;
+    background-color: #313e48;
+    color: white;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+
+}

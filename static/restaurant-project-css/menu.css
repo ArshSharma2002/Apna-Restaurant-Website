@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+*::selection{
+    background-color: #5c6469;
+    color: white;
+}
+
+h1 {
+    background-color: #313e48;
+    color: white;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 82px;
+    font-family: 'Dancing Script', cursive;
+}
+
+img {
+    border-radius: 10px;
+}
+
+ol li {
+    margin: 5px 30px;
+    padding: 5px;
+    font-size: 20px;
+    list-style-type: disc;
+}
+
+div ul li{
+    list-style-type:decimal;
+}
+
+#menu-container {
+    display: flex;
+    margin: 25px;
+
+}
+
+.menu-items {
+
+    border: 1px solid black;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.menu-items:hover {
+    box-shadow: 2px 2px 6px black;
+}
+
+.menu-heading{
+    background-color: #313e48;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    padding: 15px 3px;
+}
+
+#menu-list::before{
+    content: " ";
+    position: fixed;
+    top: 0px;
+    background: url('../web-images/Pizza.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#order-btn{
+    background-color: #313e48;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin: 20px;
+}
+
+#order-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+#order-btn:hover{
+    background: none;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
+
+/* ******************* FOR RESPONSIVENESS ******************* */
+
+@media screen and (max-width: 1000px) {
+    
+    #menu-container{
+        flex-wrap: wrap;
+    }
+    
+}
